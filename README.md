@@ -1,27 +1,28 @@
-# Fieldnotes — Architecture for the real world
+# Weather Atlas
 
-An editorial, responsive architecture portfolio for exploring a cloud-native commerce platform. It combines a presentation-style landing page with interactive views for system architecture, cloud service comparisons, security and operations, and deployment flow.
+A responsive weather dashboard with live current conditions, an hourly forecast, and a seven-day outlook. Weather data and location search are powered by the public [Open-Meteo API](https://open-meteo.com/); no API key is required.
 
 ## Run locally
 
-No build step or package installation is required. Open `index.html` in a browser, or serve the repository root with a static web server:
+Open `index.html` in a browser, or serve this repository with a static web server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Then visit `http://localhost:8000` on the same computer.
 
-## Site features
+## Features
 
-- Editorial landing page with animated, abstract system illustration.
-- Architecture views in tabs: system map, cloud choices, security and operations, and delivery.
-- Azure, AWS, and Google Cloud service mapping.
-- Responsive layouts and motion-reduction support.
-- Static HTML, CSS, and JavaScript; no build tooling required.
+- Search cities and places with location suggestions.
+- Optional browser geolocation (requires permission and a secure context such as HTTPS or localhost).
+- Current temperature, apparent temperature, humidity, wind, UV index, and daily high/low.
+- 24-hour and seven-day forecasts.
+- Celsius/Fahrenheit and km/h/mph display options.
+- Responsive layout, loading/error states, and reduced-motion support.
 
-## Publish with GitHub Pages
+## Publish on GitHub Pages
 
-In the repository settings, enable GitHub Pages and configure deployment from the `main` branch and repository root. Once Pages finishes deploying, the published site URL will appear in the Pages settings.
+In the repository settings, enable GitHub Pages and configure deployment from the `main` branch and repository root. Once deployment completes, GitHub Pages displays the public website URL in the Pages settings.
 
-This is a provider-neutral reference design. Validate service availability, sizing, security, compliance, resilience, and recovery requirements against the actual workload before using it as a production plan.
+The dashboard calls Open-Meteo directly from the browser. Forecast availability depends on the public API and the user's network connection.
