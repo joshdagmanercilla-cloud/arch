@@ -1,27 +1,27 @@
-# Arch Atlas
+# Fieldnotes — Architecture for the real world
 
-A static, interactive cloud architecture workspace for architects and engineering teams. The site turns the repository's architecture overview into a browsable system map.
+An editorial, responsive architecture portfolio for exploring a cloud-native commerce platform. It combines a presentation-style landing page with interactive views for system architecture, cloud service comparisons, security and operations, and deployment flow.
 
 ## Run locally
 
-No build step or package installation is required. Open `index.html` in a browser, or serve the repository root with any static web server, for example:
+No build step or package installation is required. Open `index.html` in a browser, or serve the repository root with a static web server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then open `http://localhost:8000`.
 
-## Features
+## Site features
 
-- Color-coded architecture layers for edge, application, data, and platform operations.
-- Clickable components with responsibilities and design notes.
-- Azure, AWS, and Google Cloud service mapping selector.
-- Component search, architecture layer navigation, zoom controls, and text export.
-- Responsive layout for desktop and mobile.
+- Editorial landing page with animated, abstract system illustration.
+- Architecture views in tabs: system map, cloud choices, security and operations, and delivery.
+- Azure, AWS, and Google Cloud service mapping.
+- Responsive layouts and motion-reduction support.
+- Static HTML, CSS, and JavaScript; no build tooling required.
 
-## Publish as a website
+## Publish with GitHub Pages
 
-This is a static site and can be hosted on GitHub Pages or another static web host. In GitHub, configure Pages to deploy from the `main` branch and the repository root.
+In the repository settings, enable GitHub Pages and configure deployment from the `main` branch and repository root. Once Pages finishes deploying, the published site URL will appear in the Pages settings.
 
-The diagram is a reference design. Validate service selection, security controls, availability, capacity, and recovery requirements for your workload before using it as a production plan.
+This is a provider-neutral reference design. Validate service availability, sizing, security, compliance, resilience, and recovery requirements against the actual workload before using it as a production plan.
